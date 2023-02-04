@@ -1,23 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html lang="en-ID">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="keywords" content="Fashion pria & wanita">
+    <meta name="description" content="jan 23, 2023 Fasion-indonesia ">
+    <meta name="author" content="dioarafi">
+    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>dioarafi</title>     
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <!-- awesome --> 
+<script src="https://kit.fontawesome.com/4a864a7a11.js" crossorigin="anonymous"></script> 
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+    theme: {
+    extend: {
+        fontFamily: {
+        figtree: ["Figtreee", "sans-serif"],
+        },
+    },
+    },
+};
+</script>
+  
+  <!-- Tiktok pixel -->
+<script>
+		!function (w, d, t) {
+		  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+		
+		  ttq.load('CFEM5SRC77U6J4U015KG');
+		  ttq.page();
+		}(window, document, 'ttq');
+	</script>
+
+<style>
+    
+a:hover {
+  color: #ff5574;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:focus {
+	outline: none !important;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+::selection {
+  background: hsl(215, 85%, 40%);
+  color: hsl(0, 0%, 95%);
+}
+
+::-moz-selection {
+  background: hsl(215, 85%, 40%);
+  color: hsl(0, 0%, 95%);
+}  
+
+/* Loader */
+#loader {
+  position: absolute;
+  left: 58%;
+  top: 50%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #292929;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+
+#hero-image {
+  background-image: url("tesjpg"); /* The image used */
+  background-color: black; /* Used if the image is unavailable */
+  height: 900px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <!-- loader -->
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  
+    
+   <div class="bg-zinc-900 text-white flex flex-col text-xl font-figtree" id="hero-image">
+	<main class="max-w-4xl m-auto p-3">
+		<section class="grid place-items-center text-center py-14">
+			<img class="rounded-full w-32 h-32 my-5" src="tes.jpg" alt="marnie from pokemon journeys" />
+			<h1 class="text-3xl mb-3">dioarafi</h1>
+			<h2 class="text-xl text-zinc-300">WE COMMIT OURSELVES TO SENSATIONAL STREETWEAR </h2>
+		</section>
+
+		<section class="max-w-xl m-auto">
+			
+			<a href="#" target="_blank">
+				<div class="bg-zinc-800 hover:bg-zinc-700 transition-colors shadow-lg border-t-2 border-zinc-700 border-zinc-700 p-3 m-4 rounded-xl flex justify-evenly items-center">
+				<span class="fa-sharp fa-solid fa-earth-americas"></span>
+					<p class="text-zinc-300">Website</p>
+					<div class="spacer"></div>
+				</div>			
+		  </a>
+		
+			<a href="#" target="_blank">			
+				<div class="bg-zinc-800 hover:bg-zinc-700 transition-colors shadow-lg border-t-2 border-zinc-700 border-zinc-700 p-3 m-4 rounded-xl flex justify-evenly items-center">
+					<span class="fab fa-whatsapp"></span>
+					<p class="text-zinc-300">WhatsApp</p>
+					<div class="spacer"></div>
+				</div>
+	  	</a>
+	
+			<a href="#" target="_blank">
+				<div class="bg-zinc-800 hover:bg-zinc-700 transition-colors shadow-lg border-t-2 border-zinc-700 border-zinc-700 p-3 m-4 rounded-xl flex justify-evenly items-center">
+					<span class="fab fa-tiktok"></span>
+					<p class="text-zinc-300">Tiktok</p>
+					<div class="spacer"></div>
+				</div>
+			</a>
+			
+			<a href="#" target="_blank">
+				<div class="bg-zinc-800 hover:bg-zinc-700 transition-colors shadow-lg border-t-2 border-zinc-700 border-zinc-700 p-3 m-4 rounded-xl flex justify-evenly items-center">
+		<span class="fa-sharp fa-solid fa-bag-shopping"></span>
+					<p class="text-zinc-300">Shoppe</p>
+					<div class="spacer" aria-hidden="true"></div>
+				</div>
+			</a>
+		
+		</section>
+</main>
+
+
+	<footer class="text-center text-zinc-400 my-10 px-5">
+		 © 2023 Copyright<span class="text-red-500"></span> dioarafi<a href="#" target="_blank" class="text-sky-500 hover:underline"></a>
+	</footer>
+	</div>
+	<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
 </html>
+
+
+
+
